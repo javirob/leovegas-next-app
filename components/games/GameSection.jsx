@@ -7,8 +7,8 @@ const GameSection = ({ category, games }) => {
 
   return (
     <section className='my-8'>
-      <h2 className='mb-4 capitalize tracking-wide  font-semibold bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 text-white inline-block  rounded-sm'>
-        <Link href={`/category/${slug}`}>
+      <h2 className='mb-2 capitalize tracking-wide  font-semibold bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 text-white inline-block  rounded'>
+        <Link href={`/${slug}`}>
           <a className='px-2 py-1 inline-block text-sm'>{`${category} (${games.length})`}</a>
         </Link>
       </h2>
