@@ -33,8 +33,10 @@ export const getStaticPaths = async () => {
   const categorySlugs = await getCategorySlugs();
   const allPaths = categorySlugs.map((item) => ({ params: { category: item } }));
 
+  console.log(allPaths);
+
   return {
     paths: allPaths,
-    fallback: true,
+    fallback: false,
   };
 };
